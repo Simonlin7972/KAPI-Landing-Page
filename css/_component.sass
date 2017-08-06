@@ -319,17 +319,32 @@ footer
         border-radius: 20px
         background-color: rgba(0,0,0,0.5)
 
+
+// RWD setting
 @media screen and (max-width: $break-lg)
   .banner
     .phone-right
       display: none
 
-@media screen and (max-width: $break-sm)
+@media screen and (max-width: $break-md)
   .banner
     .phone-left
       display: none
 
-@media screen and (max-width: $break-xs)
+@media screen and (min-width: $break-md) and (max-width: $break-lg)
+  .banner
+    .phone-left
+      top: -82px
+      img
+        height: 100%
+
+
+@media screen and (max-width: $break-sm)
+  // .banner
+  //   .phone-left
+  //     display: none
+
+@media screen and (max-width: 548px)
   .sub-form
   .input-submit
     margin-left: 0px !important

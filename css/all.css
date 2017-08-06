@@ -97,6 +97,21 @@ footer {
   .grid-960 {
     width: 500px; } }
 
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .banner {
+    padding: 64px 32px; }
+    .banner .kapi-info .headline-wrapper {
+      margin-left: 0; }
+    .banner .kapi-info .cta-wrapper .cta-android {
+      margin-left: 0;
+      margin-top: 24px; }
+  .feature {
+    margin-top: 480px; } }
+
+@media screen and (max-width: 768px) {
+  footer .team-members {
+    padding-left: 0; } }
+
 @media screen and (max-width: 500px) {
   .section-space {
     padding: 48px 0; }
@@ -116,6 +131,11 @@ footer {
   footer .team-members {
     padding-left: 0;
     padding: 4px 24px; } }
+
+@media screen and (max-width: 340px) {
+  .banner {
+    padding: 56px 16px;
+    height: 500px; } }
 
 @media screen and (max-width: 468px) {
   .banner .kapi-info .headline-wrapper {
@@ -491,11 +511,17 @@ footer .team-members .member {
   .banner .phone-right {
     display: none; } }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
   .banner .phone-left {
     display: none; } }
 
-@media screen and (max-width: 500px) {
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .banner .phone-left {
+    top: -82px; }
+    .banner .phone-left img {
+      height: 100%; } }
+
+@media screen and (max-width: 548px) {
   .input-submit {
     margin-left: 0px !important;
     margin-top: 16px;
