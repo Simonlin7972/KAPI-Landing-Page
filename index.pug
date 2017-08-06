@@ -43,28 +43,28 @@ header.banner
             a(href="#", target="_blank") 請往這裡走 👉
 
 //- Feature 功能介紹
-.feature
+.feature.section-space
   .container.grid-960
     .row
-      .col-md-12.title-section
+      .col-sm-12.title-section
         h2.title 你需要的 都在這裡
         h4.subtitle 輕鬆找到最適合你的咖啡店
-      .col-md-3.feature-content
+      .col-sm-6.col-lg-3.feature-content
         div
           img(src="./assets/Onboard_icon01.png", alt="")
         h3 離我最近店家
         p 輕鬆找到附近的咖啡店
-      .col-md-3.feature-content
+      .col-sm-6.col-lg-3.feature-content
         div
           img(src="./assets/Onboard_icon02.png", alt="")
         h3 自訂偏好篩選
         p 根據不同需求搜尋店家
-      .col-md-3.feature-content 
+      .col-sm-6.col-lg-3.feature-content 
         div
           img(src="./assets/Onboard_icon03.png", alt="")
         h3 個人收藏列表
         p 最愛店家一手掌握
-      .col-md-3.feature-content
+      .col-sm-6.col-lg-3.feature-content
         div
           img(src="./assets/Onboard_icon04.png", alt="")
         h3 完整評價機制
@@ -105,7 +105,7 @@ header.banner
   .container
     .row
       .col-md-12
-        .title 追蹤 KAPI 最新咖啡消息報你知
+        .title 追蹤 KAPI 取得最新咖啡訊息
         iframe(name="hidden_iframe" id="hidden_iframe" style="display:none;")
         form(action="https://docs.google.com/forms/d/e/1FAIpQLSdE25YBSACKf9DHKzQEUGOy7_e9kxvDAqZ44m1YDYQoV9KuzQ/formResponse"
         method="POST" id="subscribe-form" target="hidden_iframe" onsubmit="return emailCheck()").sub-form
@@ -158,55 +158,56 @@ footer.section-space
               .position 後端工程師
               .name Jack      
       .col-md-3
-        .small-title 追蹤Facebook
-          .fb-block
-            iframe(src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FKAPI.tw%2F%3Ffref%3Dts&tabs=timeline&width=340&height=70&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" width="220" height="70" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true")
-        .small-title 立即下載
-          .cta-download
-            a(href="#", target="_blank") 
-              img(src="./assets/apple-store.png", alt="")
-            a(href="#", target="_blank") 
-              img(src="./assets/google-store.png", alt="")                
+        .social-wrapper
+          .small-title 追蹤Facebook
+            .fb-block
+              iframe(src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FKAPI.tw%2F%3Ffref%3Dts&tabs=timeline&width=340&height=70&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" width="220" height="70" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true")
+          .small-title 立即下載
+            .cta-download
+              a(href="#", target="_blank") 
+                img(src="./assets/apple-store.png", alt="")
+              a(href="#", target="_blank") 
+                img(src="./assets/google-store.png", alt="")                
 
 
 <script src="./js/all.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-<script>
-  // 用來判斷可以不可以 submit
-  submitted = false;
-  function emailCheck(){
-    if ( submitted === false ) {
-      alert("檢查一下 Email 是否錯誤!");
-  	  return false
-  	} else {
-      return true
-  	}
-  }
-  	// 用來判斷可以不可以 如果 Email 符合格式，就會幫對應的 icon 加 active 也會把判斷的東東改成 true
-  $(window).load(function() {
-    $('#subscribe-form').bind("change paste keyup", ".email-input", function(){
-      if ($('.email-input').val().search( /^[\w\-\+\.]+@[\w-]+(\.[\w-]+)+$/ ) != -1) {
-        submitted = true
-        $(".email-input-group i").removeClass('active');
-        $(".email-input-group .fa-check-circle").addClass('active');
-      } else {
-        submitted = false
-        $(".email-input-group i").removeClass('active');
-        $(".email-input-group .fa-exclamation-circle").addClass('active');
-      }
-    })
-  })
-
-  // 原本填寫成功會跳到 google，但我把他宇智波轉到這個 iframe 並藏起來，然後清空剛輸入的 Email 客製化自己的感謝訊息
-  $("#hidden_iframe").load(function() {
-    $('.email-input').val("");
-    $('#subscribe-success').fadeIn(300);
-  })
-
-  // 感謝訊息就是隨便點都會消失，你也可以放個假按鈕
-  $('#subscribe-success').click( function() {
-  	$(this).fadeOut(300)
-  })
-  </script>
+//- <script>
+//-   // 用來判斷可以不可以 submit
+//-   submitted = false;
+//-   function emailCheck(){
+//-     if ( submitted === false ) {
+//-       alert("檢查一下 Email 是否錯誤!");
+//-   	  return false
+//-   	} else {
+//-       return true
+//-   	}
+//-   }
+//-   	// 用來判斷可以不可以 如果 Email 符合格式，就會幫對應的 icon 加 active 也會把判斷的東東改成 true
+//-   $(window).load(function() {
+//-     $('#subscribe-form').bind("change paste keyup", ".email-input", function(){
+//-       if ($('.email-input').val().search( /^[\w\-\+\.]+@[\w-]+(\.[\w-]+)+$/ ) != -1) {
+//-         submitted = true
+//-         $(".email-input-group i").removeClass('active');
+//-         $(".email-input-group .fa-check-circle").addClass('active');
+//-       } else {
+//-         submitted = false
+//-         $(".email-input-group i").removeClass('active');
+//-         $(".email-input-group .fa-exclamation-circle").addClass('active');
+//-       }
+//-     })
+//-   })
+//- 
+//-   // 原本填寫成功會跳到 google，但我把他宇智波轉到這個 iframe 並藏起來，然後清空剛輸入的 Email 客製化自己的感謝訊息
+//-   $("#hidden_iframe").load(function() {
+//-     $('.email-input').val("");
+//-     $('#subscribe-success').fadeIn(300);
+//-   })
+//- 
+//-   // 感謝訊息就是隨便點都會消失，你也可以放個假按鈕
+//-   $('#subscribe-success').click( function() {
+//-   	$(this).fadeOut(300)
+//-   })
+//-   </script>
 </body>
 </html>

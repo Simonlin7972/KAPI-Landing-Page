@@ -284,3 +284,61 @@ footer
   100%
     transform: translateX(0px)
     opacity: 1
+
+
+// RWD
+
+@media screen and (max-width: $break-xl)
+  .banner
+    .phone-right
+      // display: none
+      transform: rotate(0)
+      left: 220px
+      top: -90px
+      box-shadow: -21px 59px 38px 0 rgba(0,0,0,0.20)
+      img
+        height: 80%
+    .phone-left
+      left: 40px
+      top: -90px
+      transform: rotate(0)
+      img
+        border-radius: 36px
+        height: 80%
+        box-shadow: 12px 62px 39px 0 rgba(83,49,13,0.66)
+  .contribute
+    .tag-wrapper-top,.tag-wrapper-bottom
+      margin: 6px 0
+      .tag-city
+        font-size: 13px
+        margin-top: 4px
+        display: inline-block
+        color: rgba(255,255,255,.9)
+        padding: 8px 16px
+        letter-spacing: 1px
+        border-radius: 20px
+        background-color: rgba(0,0,0,0.5)
+
+@media screen and (max-width: $break-lg)
+  .banner
+    .phone-right
+      display: none
+
+@media screen and (max-width: $break-sm)
+  .banner
+    .phone-left
+      display: none
+
+@media screen and (max-width: $break-xs)
+  .sub-form
+  .input-submit
+    margin-left: 0px !important
+    margin-top: 16px
+    width: 100%
+  .input-subscribe
+    width: 100% !important
+  .input-subscribe:focus
+    border: 2px solid #9F9426
+    outline: none
+    background-color: white
+    width: auto

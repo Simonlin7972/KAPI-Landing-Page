@@ -49,8 +49,7 @@
   background-color: white;
   margin-top: 440px;
   position: relative;
-  z-index: 2;
-  padding: 72px 0; }
+  z-index: 2; }
   .feature .grid-960 {
     max-width: 960px; }
 
@@ -93,6 +92,34 @@ footer {
       footer .cta-download a img {
         height: 100%;
         display: inline-block; }
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .grid-960 {
+    width: 500px; } }
+
+@media screen and (max-width: 500px) {
+  .section-space {
+    padding: 48px 0; }
+  .banner {
+    padding: 64px 32px; }
+    .banner .kapi-info .headline-wrapper {
+      margin-left: 16px; }
+      .banner .kapi-info .headline-wrapper .title-text .version-tag {
+        display: none; }
+    .banner .kapi-info .cta-wrapper .cta-android {
+      margin-left: 0;
+      margin-top: 24px; }
+  .feature {
+    margin-top: 490px; }
+  footer .about-us, footer .contact-us, footer .social-wrapper {
+    padding: 4px 24px; }
+  footer .team-members {
+    padding-left: 0;
+    padding: 4px 24px; } }
+
+@media screen and (max-width: 468px) {
+  .banner .kapi-info .headline-wrapper {
+    margin-left: 0; } }
 
 .banner .phone-left, .banner .phone-right {
   display: inline-block;
@@ -428,6 +455,59 @@ footer .team-members .member {
     transform: translateX(0px);
     opacity: 1; } }
 
+@media screen and (max-width: 1200px) {
+  .banner .phone-right {
+    -webkit-transform: rotate(0);
+    -ms-transform: rotate(0);
+    transform: rotate(0);
+    left: 220px;
+    top: -90px;
+    box-shadow: -21px 59px 38px 0 rgba(0, 0, 0, 0.2); }
+    .banner .phone-right img {
+      height: 80%; }
+  .banner .phone-left {
+    left: 40px;
+    top: -90px;
+    -webkit-transform: rotate(0);
+    -ms-transform: rotate(0);
+    transform: rotate(0); }
+    .banner .phone-left img {
+      border-radius: 36px;
+      height: 80%;
+      box-shadow: 12px 62px 39px 0 rgba(83, 49, 13, 0.66); }
+  .contribute .tag-wrapper-top, .contribute .tag-wrapper-bottom {
+    margin: 6px 0; }
+    .contribute .tag-wrapper-top .tag-city, .contribute .tag-wrapper-bottom .tag-city {
+      font-size: 13px;
+      margin-top: 4px;
+      display: inline-block;
+      color: rgba(255, 255, 255, 0.9);
+      padding: 8px 16px;
+      letter-spacing: 1px;
+      border-radius: 20px;
+      background-color: rgba(0, 0, 0, 0.5); } }
+
+@media screen and (max-width: 992px) {
+  .banner .phone-right {
+    display: none; } }
+
+@media screen and (max-width: 576px) {
+  .banner .phone-left {
+    display: none; } }
+
+@media screen and (max-width: 500px) {
+  .input-submit {
+    margin-left: 0px !important;
+    margin-top: 16px;
+    width: 100%; }
+  .input-subscribe {
+    width: 100% !important; }
+  .input-subscribe:focus {
+    border: 2px solid #9F9426;
+    outline: none;
+    background-color: white;
+    width: auto; } }
+
 * {
   font-family: PingFangTC-Light,  PingFangTC-Regular, PingFangTC-Medium, PingFangTC-Semibold, xingothic-tc, sans-serif, Microsoft JhengHei; }
 
@@ -484,3 +564,9 @@ footer .small-title {
 footer p {
   font-size: 14px;
   color: rgba(255, 255, 255, 0.6); }
+
+@media screen and (max-width: 500px) {
+  .title {
+    font-size: 24px; }
+  .subtitle {
+    font-size: 20px; } }
