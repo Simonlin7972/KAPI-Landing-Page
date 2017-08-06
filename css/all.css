@@ -268,7 +268,7 @@ footer {
   margin-bottom: 16px;
   text-align: center;
   line-height: 180px;
-  border-radius: 8px;
+  border-radius: 10px;
   transition: all .3s; }
   .feature .feature-content div:hover {
     background-color: rgba(0, 0, 0, 0.028); }
