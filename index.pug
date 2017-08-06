@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>KAPI找咖啡 | 最方便的找咖啡APP </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/all.css">
+</head>
+<body>
+
+//- Header 大圖
+
+header.banner
+  .container
+    .row
+      .col-md-6
+        .phone-left
+          img(src="./assets/phone-left.png", alt="")
+        .phone-right
+          img(src="./assets/phone-right.png", alt="")
+      .col-md-6
+        .kapi-info
+          .app-icon
+            img(src="./assets/app_180.png", alt="appicon")
+          .headline-wrapper
+            .title-text
+              img(src="./assets/KAPI.png", alt="kapi")
+              h1 找咖啡
+              .version-tag v1.0
+            p.slogan 最方便的找咖啡APP ☕️
+          .cta-wrapper
+            a(href="#", target="_blank").cta-ios  
+              .icon-box
+                img(src="./assets/icon_ios.svg", alt="ios")
+              p 下載 iOS 版本
+            a(href="#", target="_blank").cta-android
+              .icon-box
+                img(src="./assets/icon_android.png", alt="android")
+              p 下載 Android 版本
+          p.survey-link 讓我們請你喝杯咖啡吧！
+            a(href="#", target="_blank") 請往這裡走 👉
+
+//- Feature 功能介紹
+.feature
+  .container.grid-960
+    .row
+      .col-md-12.title-section
+        h2.title 你需要的 都在這裡
+        h4.subtitle 輕鬆找到最適合你的咖啡店
+      .col-md-3.feature-content
+        div
+          img(src="./assets/Onboard_icon01.png", alt="")
+        h3 離我最近店家
+        p 輕鬆找到附近的咖啡店
+      .col-md-3.feature-content
+        div
+          img(src="./assets/Onboard_icon02.png", alt="")
+        h3 自訂偏好篩選
+        p 根據不同需求搜尋店家
+      .col-md-3.feature-content 
+        div
+          img(src="./assets/Onboard_icon03.png", alt="")
+        h3 個人收藏列表
+        p 最愛店家一手掌握
+      .col-md-3.feature-content
+        div
+          img(src="./assets/Onboard_icon04.png", alt="")
+        h3 完整評價機制
+        p 店家評分一目瞭然
+
+//- 貢獻資料區
+.contribute.section-space
+  .container
+    .row
+      .col-md-12
+        .title 收藏超過 2,000 筆店家資訊
+        .subtitle 全台支援 17 個縣市 內容持續更新
+      .col-md-12
+        .tag-wrapper-top
+          .tag-city 台北
+          .tag-city 基隆
+          .tag-city 桃園
+          .tag-city 新竹
+          .tag-city 宜蘭
+          .tag-city 花蓮
+          .tag-city 台東
+          .tag-city 澎湖         
+        .tag-wrapper-bottom
+          .tag-city 苗栗
+          .tag-city 台中
+          .tag-city 南投
+          .tag-city 彰化
+          .tag-city 雲林
+          .tag-city 嘉義
+          .tag-city 台南
+          .tag-city 高雄
+          .tag-city 屏東           
+      .col-md-12.cta-center
+        a(href="#", target="_blank").cta-add-cafe 我想要貢獻店家資料
+
+//- subscribe追蹤
+.subscribe.section-space
+  .container
+    .row
+      .col-md-12
+        .title 追蹤 KAPI 最新咖啡消息報你知
+        iframe(name="hidden_iframe" id="hidden_iframe" style="display:none;")
+        form(action="https://docs.google.com/forms/d/e/1FAIpQLSdE25YBSACKf9DHKzQEUGOy7_e9kxvDAqZ44m1YDYQoV9KuzQ/formResponse"
+        method="POST" id="subscribe-form" target="hidden_iframe" onsubmit="return emailCheck()").sub-form
+          input(type='email' name='entry.703264791' value="" 
+          id="entry_1338995585" dir="auto" aria-label="Email" aria-required="true" placeholder="請輸入您的 E-mail").input-subscribe
+          i.fa.fa-check-circle
+          i.fa.fa-exclamation-circle
+          input(type='submit' name='submit' value='馬上訂閱').input-submit
+#subscribe-success
+  h2 非常感謝您的支持！KAPI團隊會持續努力der          
+
+footer.section-space
+  .container
+    .row
+      .col-md-4
+        .about-us
+          .small-title 關於我們
+          p KAPI 找咖啡是由一群熱血的年輕團隊所開發，團隊中有天馬行空的設計師和技能破表的工程師們，我們致力於提供最棒的產品和服務，希望有機會幫助人們的生活變得更好。同時，我們非常樂於傾聽所有使用者的聲音，透過你們的回饋讓我們可以將產品的體驗持續優化得更好。也許此刻的產品不是最理想的，但我們很願意讓它變得更棒、更符合人們的需要。
+        .contact-us
+          .small-title 聯絡我們
+          p 如果有任何問題歡迎來信至：
+            br 
+            |kapitw.team@gamil.com
+      .col-md-5
+        .team-members
+          .small-title 團隊成員
+          .member 
+            .avatar.simon
+            .member-info
+              .position 產品設計師
+              .name Simon
+          .member
+            .avatar.samuel
+            .member-info  
+              .position iOS工程師
+              .name Samuel
+          .member
+            .avatar.shou
+            .member-info  
+              .position iOS工程師
+              .name Shou
+          .member
+            .avatar.yalan
+            .member-info   
+              .position Android 工程師
+              .name Yalan               
+          .member
+            .avatar.jack
+            .member-info     
+              .position 後端工程師
+              .name Jack      
+      .col-md-3
+        .small-title 追蹤Facebook
+          .fb-block
+            iframe(src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FKAPI.tw%2F%3Ffref%3Dts&tabs=timeline&width=340&height=70&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" width="220" height="70" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true")
+        .small-title 立即下載
+          .cta-download
+            a(href="#", target="_blank") 
+              img(src="./assets/apple-store.png", alt="")
+            a(href="#", target="_blank") 
+              img(src="./assets/google-store.png", alt="")                
+
+
+<script src="./js/all.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script>
+  // 用來判斷可以不可以 submit
+  submitted = false;
+  function emailCheck(){
+    if ( submitted === false ) {
+      alert("檢查一下 Email 是否錯誤!");
+  	  return false
+  	} else {
+      return true
+  	}
+  }
+  	// 用來判斷可以不可以 如果 Email 符合格式，就會幫對應的 icon 加 active 也會把判斷的東東改成 true
+  $(window).load(function() {
+    $('#subscribe-form').bind("change paste keyup", ".email-input", function(){
+      if ($('.email-input').val().search( /^[\w\-\+\.]+@[\w-]+(\.[\w-]+)+$/ ) != -1) {
+        submitted = true
+        $(".email-input-group i").removeClass('active');
+        $(".email-input-group .fa-check-circle").addClass('active');
+      } else {
+        submitted = false
+        $(".email-input-group i").removeClass('active');
+        $(".email-input-group .fa-exclamation-circle").addClass('active');
+      }
+    })
+  })
+
+  // 原本填寫成功會跳到 google，但我把他宇智波轉到這個 iframe 並藏起來，然後清空剛輸入的 Email 客製化自己的感謝訊息
+  $("#hidden_iframe").load(function() {
+    $('.email-input').val("");
+    $('#subscribe-success').fadeIn(300);
+  })
+
+  // 感謝訊息就是隨便點都會消失，你也可以放個假按鈕
+  $('#subscribe-success').click( function() {
+  	$(this).fadeOut(300)
+  })
+  </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="108px" height="45px" viewBox="0 0 108 45" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46 (44423) - http://www.bohemiancoding.com/sketch -->
+    <title>KAPI</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <text id="text-1" font-family="STYuanti-SC-Bold, Yuanti SC" font-size="48" font-weight="bold" line-spacing="40" letter-spacing="3" fill="#FFFFFF">
+            <tspan x="0" y="59">KAP</tspan>
+            <tspan x="91.512" y="59" letter-spacing="3.5999999">I</tspan>
+        </text>
+        <filter x="-6.5%" y="-17.5%" width="115.0%" height="140.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="1" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.470588235   0 0 0 0 0.301960784   0 0 0 0 0.121568627  0 0 0 0.4 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="【-Demo-Web-Page-】" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" fill-opacity="1">
+        <g id="Landing-Page" transform="translate(-830.000000, -119.000000)" fill="#FFFFFF">
+            <g id="Group-14" transform="translate(832.000000, 112.000000)">
+                <g id="Group-9">
+                    <g id="KAPI">
+                        <use filter="url(#filter-2)" xlink:href="#text-1"></use>
+                        <use xlink:href="#text-1"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
