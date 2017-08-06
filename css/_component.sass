@@ -104,17 +104,30 @@
       margin-bottom: 0
       letter-spacing: .5px
 
+// 特色介紹
 .feature
   .feature-content
+    h3
+      font-family: PingFangTC-Medium
+      opacity: 0.9
     div
       width: 180px
       height: 180px
-      background-color: rgba(0,0,0,0.04)
       border-radius: 10px
       margin: 0 auto
       margin-bottom: 16px
+      text-align: center
+      line-height: 180px
+      border-radius: 8px
+      transition: all .3s
+      &:hover
+        background-color: rgba(0,0,0,0.028)
+        img
+          transform: rotate(8deg)
       img
-        width: 100%
+        width: 82%
+        transition: all .2s
+
 
 // 新增店家貢獻資料
 .tag-wrapper-top,.tag-wrapper-bottom
@@ -128,7 +141,7 @@
     padding: 8px 16px
     letter-spacing: 1px
     border-radius: 20px
-    background-color: $primary-color-dark
+    background-color: rgba(200,149,94,.8)
 
 .tag-wrapper-top
   margin-top: 32px
@@ -314,22 +327,33 @@ footer
         margin-top: 4px
         display: inline-block
         color: rgba(255,255,255,.9)
-        padding: 8px 16px
-        letter-spacing: 1px
-        border-radius: 20px
-        background-color: rgba(0,0,0,0.5)
 
 
 // RWD setting
+@media screen and (max-width: $break-xl)
+  .contribute
+    .tag-wrapper-top
+      margin-top: 32px
 @media screen and (max-width: $break-lg)
   .banner
     .phone-right
       display: none
 
+
 @media screen and (max-width: $break-md)
   .banner
     .phone-left
       display: none
+  .contribute
+    .tag-wrapper-top
+      margin-top: 32px
+      .tag-city
+        padding: 6px 10px
+    .tag-wrapper-bottom
+      .tag-city
+        padding: 6px 10px
+
+
 
 @media screen and (min-width: $break-md) and (max-width: $break-lg)
   .banner

@@ -1,7 +1,4 @@
 @charset "UTF-8";
-.cta-android {
-  color: red; }
-
 .section-space {
   padding: 72px 0; }
 
@@ -64,7 +61,7 @@
   .contribute:after {
     display: block;
     content: "";
-    background-color: rgba(120, 77, 31, 0.95);
+    background-color: rgba(0, 0, 0, 0.7);
     opacity: 0.8;
     width: 100%;
     z-index: 2;
@@ -259,15 +256,29 @@ footer {
     margin-bottom: 0;
     letter-spacing: .5px; }
 
+.feature .feature-content h3 {
+  font-family: PingFangTC-Medium;
+  opacity: 0.9; }
+
 .feature .feature-content div {
   width: 180px;
   height: 180px;
-  background-color: rgba(0, 0, 0, 0.04);
   border-radius: 10px;
   margin: 0 auto;
-  margin-bottom: 16px; }
+  margin-bottom: 16px;
+  text-align: center;
+  line-height: 180px;
+  border-radius: 8px;
+  transition: all .3s; }
+  .feature .feature-content div:hover {
+    background-color: rgba(0, 0, 0, 0.028); }
+    .feature .feature-content div:hover img {
+      -webkit-transform: rotate(8deg);
+      -ms-transform: rotate(8deg);
+      transform: rotate(8deg); }
   .feature .feature-content div img {
-    width: 100%; }
+    width: 82%;
+    transition: all .2s; }
 
 .tag-wrapper-top, .tag-wrapper-bottom {
   margin: 0 auto;
@@ -280,7 +291,7 @@ footer {
     padding: 8px 16px;
     letter-spacing: 1px;
     border-radius: 20px;
-    background-color: #593917; }
+    background-color: rgba(200, 149, 94, 0.8); }
 
 .tag-wrapper-top {
   margin-top: 32px; }
@@ -501,11 +512,11 @@ footer .team-members .member {
       font-size: 13px;
       margin-top: 4px;
       display: inline-block;
-      color: rgba(255, 255, 255, 0.9);
-      padding: 8px 16px;
-      letter-spacing: 1px;
-      border-radius: 20px;
-      background-color: rgba(0, 0, 0, 0.5); } }
+      color: rgba(255, 255, 255, 0.9); } }
+
+@media screen and (max-width: 1200px) {
+  .contribute .tag-wrapper-top {
+    margin-top: 32px; } }
 
 @media screen and (max-width: 992px) {
   .banner .phone-right {
@@ -513,7 +524,13 @@ footer .team-members .member {
 
 @media screen and (max-width: 768px) {
   .banner .phone-left {
-    display: none; } }
+    display: none; }
+  .contribute .tag-wrapper-top {
+    margin-top: 32px; }
+    .contribute .tag-wrapper-top .tag-city {
+      padding: 6px 10px; }
+  .contribute .tag-wrapper-bottom .tag-city {
+    padding: 6px 10px; } }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
   .banner .phone-left {
