@@ -108,12 +108,13 @@ header.banner
         .title 願意和我們聊聊KAPI嗎？
         iframe(name="hidden_iframe" id="hidden_iframe" style="display:none;")
         form(action="https://docs.google.com/forms/d/e/1FAIpQLSdE25YBSACKf9DHKzQEUGOy7_e9kxvDAqZ44m1YDYQoV9KuzQ/formResponse"
-        method="POST" id="subscribe-form" target="hidden_iframe" onsubmit="return emailCheck()").sub-form
-          input(type='email' name='entry.703264791' value="" 
-          id="entry_1338995585" dir="auto" aria-label="Email" aria-required="true" placeholder="輸入您的E-mail，我們將與您聯絡").input-subscribe
-          i.fa.fa-check-circle
-          i.fa.fa-exclamation-circle
-          input(type='submit' name='submit' value='超級願意').input-submit
+        method="POST" id="subscribe-form" target="hidden_iframe").sub-form
+          .email-input-group
+            input(type='email' name='entry.703264791' value="" 
+            id="entry_1338995585" dir="auto" aria-label="Email" aria-required="true" placeholder="輸入您的E-mail，我們將與您聯絡").input-subscribe
+            i.fa.fa-check-circle
+            i.fa.fa-exclamation-circle
+            input(id='super-submit' type='submit' name='submit' value='超級願意').input-submit
 #subscribe-success
   h2 非常感謝您的支持！KAPI團隊會持續努力der          
 
@@ -170,44 +171,8 @@ footer.section-space
                 img(src="./assets/google-store.png", alt="")                
 
 
-script(src="./js/all.js")
-script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js")
-//- <script>
-//-   // 用來判斷可以不可以 submit
-//-   submitted = false;
-//-   function emailCheck(){
-//-     if ( submitted === false ) {
-//-       alert("檢查一下 Email 是否錯誤!");
-//-   	  return false
-//-   	} else {
-//-       return true
-//-   	}
-//-   }
-//-   	// 用來判斷可以不可以 如果 Email 符合格式，就會幫對應的 icon 加 active 也會把判斷的東東改成 true
-//-   $(window).load(function() {
-//-     $('#subscribe-form').bind("change paste keyup", ".email-input", function(){
-//-       if ($('.email-input').val().search( /^[\w\-\+\.]+@[\w-]+(\.[\w-]+)+$/ ) != -1) {
-//-         submitted = true
-//-         $(".email-input-group i").removeClass('active');
-//-         $(".email-input-group .fa-check-circle").addClass('active');
-//-       } else {
-//-         submitted = false
-//-         $(".email-input-group i").removeClass('active');
-//-         $(".email-input-group .fa-exclamation-circle").addClass('active');
-//-       }
-//-     })
-//-   })
-//- 
-//-   // 原本填寫成功會跳到 google，但我把他宇智波轉到這個 iframe 並藏起來，然後清空剛輸入的 Email 客製化自己的感謝訊息
-//-   $("#hidden_iframe").load(function() {
-//-     $('.email-input').val("");
-//-     $('#subscribe-success').fadeIn(300);
-//-   })
-//- 
-//-   // 感謝訊息就是隨便點都會消失，你也可以放個假按鈕
-//-   $('#subscribe-success').click( function() {
-//-   	$(this).fadeOut(300)
-//-   })
-//-   </script>
+
 </body>
+script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js")
+script(src="./js/all.js")
 </html>

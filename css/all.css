@@ -322,6 +322,9 @@ footer {
     margin: 0 auto;
     text-align: center;
     margin-top: 24px; }
+    .subscribe .sub-form .email-input-group {
+      display: inline-block;
+      position: relative; }
     .subscribe .sub-form input {
       transition: all .3s; }
     .subscribe .sub-form .input-subscribe:focus {
@@ -329,6 +332,14 @@ footer {
       outline: none;
       background-color: white;
       width: 480px; }
+    .subscribe .sub-form .input-subscribe:focus + i {
+      opacity: 1;
+      -webkit-animation: yes .5s ease 0s 1 both;
+      animation: yes .5s ease 0s 1 both; }
+    .subscribe .sub-form .input-subscribe:focus + i + i {
+      opacity: 1;
+      -webkit-animation: no .5s ease 0s 1 both;
+      animation: no .5s ease 0s 1 both; }
     .subscribe .sub-form input::-webkit-input-placeholder {
       color: #9E9E9E; }
     .subscribe .sub-form input::-moz-placeholder {
@@ -347,20 +358,16 @@ footer {
     .subscribe .sub-form i {
       position: absolute;
       font-size: 18px;
-      top: 4px;
-      left: -22px;
+      top: 20px;
+      left: 450px;
       display: none;
-      opacity: .7; }
+      opacity: 0; }
     .subscribe .sub-form i.active {
       display: block; }
     .subscribe .sub-form .fa-check-circle {
-      color: #99E14A;
-      -webkit-animation: yes .5s ease 0s 1 both;
-      animation: yes .5s ease 0s 1 both; }
+      color: #99E14A; }
     .subscribe .sub-form .fa-exclamation-circle {
-      color: #c0c0c0;
-      -webkit-animation: no .5s ease 0s 1 both;
-      animation: no .5s ease 0s 1 both; }
+      color: #c0c0c0; }
     .subscribe .sub-form .input-submit {
       letter-spacing: .5px;
       margin-left: 8px;
@@ -382,7 +389,8 @@ footer {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.4);
-  text-align: center; }
+  text-align: center;
+  z-index: 999; }
 
 #subscribe-success h2 {
   position: relative;
@@ -549,7 +557,9 @@ footer .team-members .member {
     border: 2px solid #9F9426;
     outline: none;
     background-color: white;
-    width: auto; } }
+    width: auto; }
+  .subscribe .sub-form i {
+    left: calc( 100% - 26px); } }
 
 * {
   font-family: PingFangTC-Light,  PingFangTC-Regular, PingFangTC-Medium, PingFangTC-Semibold, xingothic-tc, sans-serif, Microsoft JhengHei; }

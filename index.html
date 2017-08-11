@@ -107,9 +107,11 @@
       <div class="col-md-12">
         <div class="title">願意和我們聊聊KAPI嗎？</div>
         <iframe name="hidden_iframe" id="hidden_iframe" style="display:none"></iframe>
-        <form class="sub-form" action="https://docs.google.com/forms/d/e/1FAIpQLSdE25YBSACKf9DHKzQEUGOy7_e9kxvDAqZ44m1YDYQoV9KuzQ/formResponse" method="POST" id="subscribe-form" target="hidden_iframe" onsubmit="return emailCheck()">
-          <input class="input-subscribe" type="email" name="entry.703264791" value="" id="entry_1338995585" dir="auto" aria-label="Email" aria-required="true" placeholder="輸入您的E-mail，我們將與您聯絡"/><i class="fa fa-check-circle"></i><i class="fa fa-exclamation-circle"></i>
-          <input class="input-submit" type="submit" name="submit" value="超級願意"/>
+        <form class="sub-form" action="https://docs.google.com/forms/d/e/1FAIpQLSdE25YBSACKf9DHKzQEUGOy7_e9kxvDAqZ44m1YDYQoV9KuzQ/formResponse" method="POST" id="subscribe-form" target="hidden_iframe">
+          <div class="email-input-group">
+            <input class="input-subscribe" type="email" name="entry.703264791" value="" id="entry_1338995585" dir="auto" aria-label="Email" aria-required="true" placeholder="輸入您的E-mail，我們將與您聯絡"/><i class="fa fa-check-circle"></i><i class="fa fa-exclamation-circle"></i>
+            <input class="input-submit" id="super-submit" type="submit" name="submit" value="超級願意"/>
+          </div>
         </form>
       </div>
     </div>
@@ -185,7 +187,6 @@
       </div>
     </div>
   </div>
-</footer>
-<script src="./js/all.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script></body>
-</html>
+</footer></body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="./js/all.js"></script></html>
