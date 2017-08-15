@@ -270,12 +270,10 @@ footer {
   line-height: 180px;
   border-radius: 10px;
   transition: all .3s; }
-  .feature .feature-content div:hover {
-    background-color: rgba(0, 0, 0, 0.028); }
-    .feature .feature-content div:hover img {
-      -webkit-transform: rotate(8deg);
-      -ms-transform: rotate(8deg);
-      transform: rotate(8deg); }
+  .feature .feature-content div:hover img {
+    -webkit-transform: rotate(8deg);
+    -ms-transform: rotate(8deg);
+    transform: rotate(8deg); }
   .feature .feature-content div img {
     width: 82%;
     transition: all .2s; }
