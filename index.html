@@ -1,193 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>KAPI找咖啡 | 最方便的找咖啡APP </title>
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link rel="shortcut icon" href="./assets/kapi_favo.ico" />
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="./css/all.css">
+    <meta charset="UTF-8">
+    <title>KAPI找咖啡 | 最方便的找咖啡APP </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="{{ url_for('static',filename='assets/kapi_favo.ico') }}"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+          integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/all.css') }}">
 </head>
 <body>
 <header class="banner">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6">
-        <div class="phone-left"><img src="./assets/phone-left.png" alt="phone-left"/></div>
-        <div class="phone-right"><img src="./assets/phone-right.png" alt="phone-right"/></div>
-      </div>
-      <div class="col-md-6">
-        <div class="kapi-info">
-          <div class="app-icon"><img src="./assets/app_180.png" alt="appicon"/></div>
-          <div class="headline-wrapper">
-            <div class="title-text"><img src="./assets/KAPI.png" alt="kapi"/>
-              <h1>找咖啡</h1>
-              <div class="version-tag">v1.0</div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="phone-left"><img src="{{ url_for('static',filename='assets/phone-left.png') }}"
+                                             alt="phone-left"/></div>
+                <div class="phone-right"><img src="{{ url_for('static',filename='assets/phone-right.png') }}"
+                                              alt="phone-right"/></div>
             </div>
-            <p class="slogan">最方便的找咖啡APP ☕️</p>
-          </div>
-          <div class="cta-wrapper"><a class="cta-ios" href="#" target="_blank"> 
-              <div class="icon-box"><img src="./assets/icon_ios.svg" alt="ios"/></div>
-              <p>下載 iOS 版本</p></a><a class="cta-android" href="https://play.google.com/store/apps/details?id=tw.yalan.cafeoffice" target="_blank">
-              <div class="icon-box"><img src="./assets/icon_android.png" alt="android"/></div>
-              <p>下載 Android 版本</p></a></div>
-          <p class="survey-link">讓我們請你喝杯咖啡吧！<a href="https://docs.google.com/forms/d/e/1FAIpQLSdSEDJM80M_4E_8Gb3YjfQOqft-bqfwi86vyoBoieZEMHUAPw/viewform" target="_blank">請往這裡走 👉</a></p>
+            <div class="col-md-6">
+                <div class="kapi-info">
+                    <div class="app-icon"><img src="{{ url_for('static',filename='assets/app_180.png') }}"
+                                               alt="appicon"/></div>
+                    <div class="headline-wrapper">
+                        <div class="title-text"><img src="{{ url_for('static',filename='assets/KAPI.png') }}"
+                                                     alt="kapi"/>
+                            <h1>找咖啡</h1>
+                            <div class="version-tag">v1.0</div>
+                        </div>
+                        <p class="slogan">最方便的找咖啡APP ☕️</p>
+                    </div>
+                    <div class="cta-wrapper"><a class="cta-ios" href="https://itunes.apple.com/tw/app/kapi%E6%89%BE%E5%92%96%E5%95%A1/id1261224197?l=zh&mt=8" target="_blank">
+                        <div class="icon-box"><img src="{{ url_for('static',filename='assets/icon_ios.svg') }}"
+                                                   alt="ios"/></div>
+                        <p>下載 iOS 版本</p></a><a class="cta-android"
+                                               href="https://play.google.com/store/apps/details?id=tw.yalan.cafeoffice"
+                                               target="_blank">
+                        <div class="icon-box"><img src="{{ url_for('static',filename='assets/icon_android.png') }}"
+                                                   alt="android"/></div>
+                        <p>下載 Android 版本</p></a></div>
+                    <p class="survey-link">讓我們請你喝杯咖啡吧！<a
+                            href="https://docs.google.com/forms/d/e/1FAIpQLSdSEDJM80M_4E_8Gb3YjfQOqft-bqfwi86vyoBoieZEMHUAPw/viewform"
+                            target="_blank">請往這裡走 👉</a></p>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
 </header>
 <div class="feature section-space">
-  <div class="container grid-960">
-    <div class="row">
-      <div class="col-sm-12 title-section">
-        <h2 class="title">你需要的 都在這裡</h2>
-        <h4 class="subtitle">輕鬆找到適合你的咖啡店</h4>
-      </div>
-      <div class="col-sm-6 col-lg-3 feature-content">
-        <div><img src="./assets/icon/nearby.png" alt="nearby"/></div>
-        <h3>離我最近店家</h3>
-        <p>輕鬆找到附近的咖啡店</p>
-      </div>
-      <div class="col-sm-6 col-lg-3 feature-content">
-        <div><img src="./assets/icon/filter.png" alt="filter"/></div>
-        <h3>自訂偏好篩選</h3>
-        <p>根據不同需求搜尋店家</p>
-      </div>
-      <div class="col-sm-6 col-lg-3 feature-content"> 
-        <div><img src="./assets/icon/bookmark.png" alt="bookmark"/></div>
-        <h3>個人收藏列表</h3>
-        <p>最愛店家一手掌握</p>
-      </div>
-      <div class="col-sm-6 col-lg-3 feature-content">
-        <div><img src="./assets/icon/rating.png" alt="rating"/></div>
-        <h3>完整評價機制</h3>
-        <p>店家評分一目瞭然</p>
-      </div>
+    <div class="container grid-960">
+        <div class="row">
+            <div class="col-sm-12 title-section">
+                <h2 class="title">你需要的 都在這裡</h2>
+                <h4 class="subtitle">輕鬆找到適合你的咖啡店</h4>
+            </div>
+            <div class="col-sm-6 col-lg-3 feature-content">
+                <div><img src="{{ url_for('static',filename='assets/icon/nearby.png') }}" alt="nearby"/></div>
+                <h3>離我最近店家</h3>
+                <p>輕鬆找到附近的咖啡店</p>
+            </div>
+            <div class="col-sm-6 col-lg-3 feature-content">
+                <div><img src="{{ url_for('static',filename='assets/icon/filter.png') }}" alt="filter"/></div>
+                <h3>自訂偏好篩選</h3>
+                <p>根據不同需求搜尋店家</p>
+            </div>
+            <div class="col-sm-6 col-lg-3 feature-content">
+                <div><img src="{{ url_for('static',filename='assets/icon/bookmark.png') }}" alt="bookmark"/></div>
+                <h3>個人收藏列表</h3>
+                <p>最愛店家一手掌握</p>
+            </div>
+            <div class="col-sm-6 col-lg-3 feature-content">
+                <div><img src="{{ url_for('static',filename='assets/icon/rating.png') }}" alt="rating"/></div>
+                <h3>完整評價機制</h3>
+                <p>店家評分一目瞭然</p>
+            </div>
+        </div>
     </div>
-  </div>
 </div>
 <div class="contribute section-space">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="title">收藏超過 2,000 筆店家資訊</div>
-        <div class="subtitle">全台支援 17 個縣市 內容持續更新</div>
-      </div>
-      <div class="col-md-12">
-        <div class="tag-wrapper-top">
-          <div class="tag-city">台北</div>
-          <div class="tag-city">基隆</div>
-          <div class="tag-city">桃園</div>
-          <div class="tag-city">新竹</div>
-          <div class="tag-city">宜蘭</div>
-          <div class="tag-city">花蓮</div>
-          <div class="tag-city">台東</div>
-          <div class="tag-city">澎湖         </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="title">收藏超過 2,000 筆店家資訊</div>
+                <div class="subtitle">全台支援 17 個縣市 內容持續更新</div>
+            </div>
+            <div class="col-md-12">
+                <div class="tag-wrapper-top">
+                    <div class="tag-city">台北</div>
+                    <div class="tag-city">基隆</div>
+                    <div class="tag-city">桃園</div>
+                    <div class="tag-city">新竹</div>
+                    <div class="tag-city">宜蘭</div>
+                    <div class="tag-city">花蓮</div>
+                    <div class="tag-city">台東</div>
+                    <div class="tag-city">澎湖</div>
+                </div>
+                <div class="tag-wrapper-bottom">
+                    <div class="tag-city">苗栗</div>
+                    <div class="tag-city">台中</div>
+                    <div class="tag-city">南投</div>
+                    <div class="tag-city">彰化</div>
+                    <div class="tag-city">雲林</div>
+                    <div class="tag-city">嘉義</div>
+                    <div class="tag-city">台南</div>
+                    <div class="tag-city">高雄</div>
+                    <div class="tag-city">屏東</div>
+                </div>
+            </div>
+            <div class="col-md-12 cta-center"><a class="cta-add-cafe" href="#" target="_blank">我想要貢獻店家資料</a></div>
         </div>
-        <div class="tag-wrapper-bottom">
-          <div class="tag-city">苗栗</div>
-          <div class="tag-city">台中</div>
-          <div class="tag-city">南投</div>
-          <div class="tag-city">彰化</div>
-          <div class="tag-city">雲林</div>
-          <div class="tag-city">嘉義</div>
-          <div class="tag-city">台南</div>
-          <div class="tag-city">高雄</div>
-          <div class="tag-city">屏東           </div>
-        </div>
-      </div>
-      <div class="col-md-12 cta-center"><a class="cta-add-cafe" href="#" target="_blank">我想要貢獻店家資料</a></div>
     </div>
-  </div>
 </div>
 <div class="subscribe section-space">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="title">願意和我們聊聊KAPI嗎？</div>
-        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none"></iframe>
-        <form class="sub-form" action="https://docs.google.com/forms/d/e/1FAIpQLSdE25YBSACKf9DHKzQEUGOy7_e9kxvDAqZ44m1YDYQoV9KuzQ/formResponse" method="POST" id="subscribe-form" target="hidden_iframe">
-          <div class="email-input-group">
-            <input class="input-subscribe" type="email" name="entry.703264791" value="" id="entry_1338995585" dir="auto" aria-label="Email" aria-required="true" placeholder="輸入您的E-mail，我們將與您聯絡"/><i class="fa fa-check-circle"></i><i class="fa fa-exclamation-circle"></i>
-            <input class="input-submit" id="super-submit" type="submit" name="submit" value="超級願意"/>
-          </div>
-        </form>
-      </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="title">願意和我們聊聊KAPI嗎？</div>
+                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none"></iframe>
+                <form class="sub-form"
+                      action="https://docs.google.com/forms/d/e/1FAIpQLSdE25YBSACKf9DHKzQEUGOy7_e9kxvDAqZ44m1YDYQoV9KuzQ/formResponse"
+                      method="POST" id="subscribe-form" target="hidden_iframe">
+                    <div class="email-input-group">
+                        <input class="input-subscribe" type="email" name="entry.703264791" value=""
+                               id="entry_1338995585" dir="auto" aria-label="Email" aria-required="true"
+                               placeholder="輸入您的E-mail，我們將與您聯絡"/><i class="fa fa-check-circle"></i><i
+                            class="fa fa-exclamation-circle"></i>
+                        <input class="input-submit" id="super-submit" type="submit" name="submit" value="超級願意"/>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
-  </div>
 </div>
 <div id="subscribe-success">
-  <h2>非常感謝您的支持！KAPI團隊會持續努力der          </h2>
+    <h2>非常感謝您的支持！KAPI團隊會持續努力der </h2>
 </div>
 <footer class="section-space">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4">
-        <div class="about-us">
-          <div class="small-title">關於我們</div>
-          <p>KAPI 找咖啡是由一群熱血的團隊所開發，我們致力於提供最棒的產品和服務，期望有機會幫助人們的生活變得更好。同時，我們非常樂於傾聽所有使用者的聲音，透過你們的回饋讓我們可以將產品的體驗持續優化得更好。也許此刻的產品不是最理想的，但我們很願意讓它變得更棒、更符合使用者的需要。</p>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="about-us">
+                    <div class="small-title">關於我們</div>
+                    <p>KAPI
+                        找咖啡是由一群熱血的團隊所開發，我們致力於提供最棒的產品和服務，期望有機會幫助人們的生活變得更好。同時，我們非常樂於傾聽所有使用者的聲音，透過你們的回饋讓我們可以將產品的體驗持續優化得更好。也許此刻的產品不是最理想的，但我們很願意讓它變得更棒、更符合使用者的需要。</p>
+                </div>
+                <div class="contact-us">
+                    <div class="small-title">聯絡我們</div>
+                    <p>如果有任何問題歡迎來信至：<br/>kapitw.team@gamil.com</p>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="team-members">
+                    <div class="small-title">團隊成員</div>
+                    <div class="member">
+                        <div class="avatar simon"></div>
+                        <div class="member-info">
+                            <div class="position">產品設計師</div>
+                            <div class="name">Simon</div>
+                        </div>
+                    </div>
+                    <div class="member">
+                        <div class="avatar samuel"></div>
+                        <div class="member-info">
+                            <div class="position">iOS工程師</div>
+                            <div class="name">Samuel</div>
+                        </div>
+                    </div>
+                    <div class="member">
+                        <div class="avatar shou"></div>
+                        <div class="member-info">
+                            <div class="position">iOS工程師</div>
+                            <div class="name">Shou</div>
+                        </div>
+                    </div>
+                    <div class="member">
+                        <div class="avatar yalan"></div>
+                        <div class="member-info">
+                            <div class="position">Android 工程師</div>
+                            <div class="name">Yalan</div>
+                        </div>
+                    </div>
+                    <div class="member">
+                        <div class="avatar jack"></div>
+                        <div class="member-info">
+                            <div class="position">後端工程師</div>
+                            <div class="name">Jack</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="social-wrapper">
+                    <div class="small-title">追蹤Facebook
+                        <div class="fb-block">
+                            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FKAPI.tw%2F%3Ffref%3Dts&amp;tabs=timeline&amp;width=340&amp;height=70&amp;small_header=true&amp;adapt_container_width=true&amp;hide_cover=false&amp;show_facepile=false&amp;appId"
+                                    width="220" height="70" style="border:none;overflow:hidden" scrolling="no"
+                                    frameborder="0" allowTransparency="true"></iframe>
+                        </div>
+                    </div>
+                    <div class="small-title">立即下載
+                        <div class="cta-download"><a href="https://itunes.apple.com/tw/app/kapi%E6%89%BE%E5%92%96%E5%95%A1/id1261224197?l=zh&mt=8" target="_blank"> <img
+                                src="{{ url_for('static',filename='assets/apple-store.png') }}" alt=""/></a><a
+                                href="https://play.google.com/store/apps/details?id=tw.yalan.cafeoffice"
+                                target="_blank"> <img src="{{ url_for('static',filename='assets/google-store.png') }}" alt=""/></a></div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="contact-us">
-          <div class="small-title">聯絡我們</div>
-          <p>如果有任何問題歡迎來信至：<br/>kapitw.team@gamil.com</p>
-        </div>
-      </div>
-      <div class="col-md-5">
-        <div class="team-members">
-          <div class="small-title">團隊成員</div>
-          <div class="member"> 
-            <div class="avatar simon"></div>
-            <div class="member-info">
-              <div class="position">產品設計師</div>
-              <div class="name">Simon</div>
-            </div>
-          </div>
-          <div class="member">
-            <div class="avatar samuel"></div>
-            <div class="member-info"> 
-              <div class="position">iOS工程師</div>
-              <div class="name">Samuel</div>
-            </div>
-          </div>
-          <div class="member">
-            <div class="avatar shou"></div>
-            <div class="member-info"> 
-              <div class="position">iOS工程師</div>
-              <div class="name">Shou</div>
-            </div>
-          </div>
-          <div class="member">
-            <div class="avatar yalan"></div>
-            <div class="member-info">  
-              <div class="position">Android 工程師</div>
-              <div class="name">Yalan               </div>
-            </div>
-          </div>
-          <div class="member">
-            <div class="avatar jack"></div>
-            <div class="member-info">    
-              <div class="position">後端工程師</div>
-              <div class="name">Jack      </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="social-wrapper">
-          <div class="small-title">追蹤Facebook
-            <div class="fb-block">
-              <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FKAPI.tw%2F%3Ffref%3Dts&amp;tabs=timeline&amp;width=340&amp;height=70&amp;small_header=true&amp;adapt_container_width=true&amp;hide_cover=false&amp;show_facepile=false&amp;appId" width="220" height="70" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-            </div>
-          </div>
-          <div class="small-title">立即下載
-            <div class="cta-download"><a href="#" target="_blank"> <img src="./assets/apple-store.png" alt=""/></a><a href="https://play.google.com/store/apps/details?id=tw.yalan.cafeoffice" target="_blank"> <img src="./assets/google-store.png" alt=""/></a></div>
-          </div>
-        </div>
-      </div>
     </div>
-  </div>
-</footer></body>
+</footer>
+</body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-<script src="./js/all.js"></script></html>
+<script src="{{ url_for('static',filename='js/all.js') }}"></script>
+</html>
